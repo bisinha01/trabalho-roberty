@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital Fitness</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 900px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #b0c4de;
+            text-align: center;
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+            padding: 20px 10px;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            align-items: flex-start;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .images img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid #b0c4de;
+        }
+
+        .text-box {
+            background-color: #c3d0e0;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            color: #ffffff;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .text-box ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .text-box li {
+            margin-bottom: 10px;
+        }
+
+        /* Fonte Luxurious Roman para a frase de destaque */
+        @font-face {
+            font-family: 'Luxurious Roman';
+            src: url('LuxuriousRoman.ttf') format('truetype'); /* Coloque aqui o seu arquivo */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .highlight {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #000080;
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'Luxurious Roman', serif;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .text-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Relógio Digital Ideal para corridas e saúde</div>
+        <div class="content">
+            <div class="images">
+                <img src="images.jpeg" alt="Mulher correndo">
+                <img src="smartwatch.png" alt="Relógio digital">
+            </div>
+            <div class="text-box">
+                <ul>
+                    <li>Cuide da sua saúde de forma prática com o Relógio Fitness!</li>
+                    <li>Monitore suas atividades</li>
+                    <li>Controle a frequência cardíaca</li>
+                    <li>Melhore a qualidade do sono e receba lembretes diários para se manter ativo e saudável.</li>
+                </ul>
+                <p>Não deixe a correria do dia a dia afetar seu desempenho, priorize sua saúde com a tecnologia.</p>
+            </div>
+        </div>
+        <div class="highlight">
+            "Transforme seu tempo em resultados: o relógio perfeito para quem busca saúde, estilo e performance!"
+        </div>
+    </div>
+</body>
+</html>
