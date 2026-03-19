@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital Fitness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .header {
+            background-color: #b0c4de;
+            text-align: center;
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+            padding: 25px 10px;
+        }
+
+       
+        .content {
+            display: flex;
+            gap: 20px;
+            margin: 40px 20px;
+            align-items: center; 
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .images img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid #b0c4de;
+        }
+
+        .text-box {
+            background-color: #c3d0e0;
+            padding: 30px; 
+            border-radius: 10px;
+            flex: 1;
+            color: #ffffff;
+            font-style: italic;
+            line-height: 1.6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        }
+
+        .text-box ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .text-box li {
+            margin-bottom: 10px;
+        }
+
+        @font-face {
+            font-family: 'Luxurious Roman';
+            src: url('LuxuriousRoman.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .highlight {
+            text-align: center;
+            margin: 30px 20px;
+            font-size: 16px;
+            color: #000080;
+            font-weight: bold;
+            font-style: normal;
+            font-family: 'Luxurious Roman', serif;
+        }
+
+        .footer-contact {
+            background-color: #b0c4de;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+                margin: 20px;
+            }
+            .footer-contact {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Relógio Digital Ideal para corridas e saúde</div>
+        
+        <div class="content">
+            <div class="images">
+                <img src="images.jpeg" alt="Mulher correndo">
+                <img src="smartwatch.png" alt="Relógio digital">
+            </div>
+            <div class="text-box">
+                <ul>
+                    <li>Cuide da sua saúde de forma prática com o Relógio Fitness!</li>
+                    <li>Monitore suas atividades</li>
+                    <li>Controle a frequência cardíaca</li>
+                    <li>Melhore a qualidade do sono e receba lembretes diários para se manter ativo e saudável.</li>
+                </ul>
+                <p>Não deixe a correria do dia a dia afetar seu desempenho, priorize sua saúde com a tecnologia.</p>
+            </div>
+        </div>
+        
+        <div class="highlight">
+            "Transforme seu tempo em resultados: o relógio perfeito para quem busca saúde, estilo e performance!"
+        </div>
+
+        <footer class="footer-contact">
+            <div>📞 (42) 984067047</div>
+            <div>📧 bernar.bianca@escola.pr.gov.br</div>
+            <div>
+                <a href="#">Instagram</a> | 
+                <a href="#">WhatsApp</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
